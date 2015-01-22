@@ -44,14 +44,37 @@ TESTS = {
     ],
     "Extra": [
         {
-            "input": [6, 3],
-            "answer": 9,
-            "explanation": "6+3=?"
+            "input": "!F]gatv]FZ;.MVl=wGC%nr*$np#'bn?}oIOa_YMf]MBQpB^Ndh_T/hw^D*hxcZVUp-ugO<nfC,N@:ag?TMby:A^*?qV_BK",
+            "answer": False,
         },
         {
-            "input": [6, 7],
-            "answer": 13,
-            "explanation": "6+7=?"
-        }
+            "input": "bnC_XuknwTlVL..wvNU/*s%)*BjXi?<Q.swXDk,T(k>X<&ZieBhy&IRvxbHtr<%c%mUE<cXD$WB$m<']Wfbzecee-!miZot"
+                     "A=&)#TPGfjDB$nw_LIZ!#JecokQ(LQK*JXKqyDSrHJSG?YTLOPfwW}Wiq=-mAi%%N]Tc(v^[TvN:XW&=@rK~CbC}|DySivVj",
+            "answer": True,
+        },
+        {
+            "input": "OGvkMBRgvDtaHBILRgTNuroYZcUkJqnAtstCXZytcQJzbpjhLoOKjQHrs"
+                     "ZKViqBAPrnqKWKNBtbCEmhSWJoCjqmachvVGEGlpAJh",
+            "answer": False,
+        },
+        {
+            "input": "IlrCOiJHgmROZaMAXvvBRESnEkAgJKJPPXIUtjaVOxrnYJQQjjjQSiU"
+                     "eJNUXdHUqwvHRkzTjYhIhLkubPzMOPKYPIaRLCcSgFHga",
+            "answer": True,
+        },
+        {
+            "input": "The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog."
+                     " Junk MTV quiz graced by fox whelps.",
+            "answer": True,
+        },
+        {
+            "input": "Brick quiz whangs jumpy veldt foks. Bright viksens jump; dozy fowl quack."
+                     " Quick wafting zephyrs veks bold Jim. Quick zephyrs blow, veksing daft Jim."
+                     " Seks-charged fop blew my junk TV quiz. How quickly daft jumping zebras veks."
+                     " Two driven jocks help faks my big quiz. Quick, Baz, get my woven flaks jodhpurs!"
+                     " Now faks quiz Jack! my brave ghost pled. Five quacking zephyrs jolt my waks bed. "
+                     "Flummoksed by job, kvetching W.",
+            "answer": False,
+        },
     ]
 }
