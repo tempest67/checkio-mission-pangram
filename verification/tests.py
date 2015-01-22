@@ -7,19 +7,40 @@ Each test is dict with
     "explanation" -- not necessary key, it's using for additional info in animation.
 """
 
-
 TESTS = {
     "Basics": [
         {
-            "input": [3, 2],
-            "answer": 5,
-            "explanation": "3+2=?"
+            "input": "The quick brown fox jumps over the lazy dog.",
+            "answer": True,
         },
         {
-            "input": [5, 7],
-            "answer": 12,
-            "explanation": "5+7=?"
-        }
+            "input": "ABCDEF",
+            "answer": False,
+        },
+        {
+            "input": "abcdefghijklmnopqrstuvwxyz",
+            "answer": True,
+        },
+        {
+            "input": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+            "answer": True,
+        },
+        {
+            "input": "abcdefghijklmnopqrstuvwxy",
+            "answer": False,
+        },
+        {
+            "input": "Bored? Craving a pub quiz fix? Why, just come to the Royal Oak!",
+            "answer": True,
+        },
+        {
+            "input": "As quirky joke, chefs won’t pay devil magic zebra tax.",
+            "answer": True,
+        },
+        {
+            "input": "Six big devils from Japan quickly forgot how to walt.",
+            "answer": False,
+        },
     ],
     "Extra": [
         {
