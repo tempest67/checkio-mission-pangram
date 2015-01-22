@@ -1,44 +1,40 @@
-<p xmlns="http://www.w3.org/1999/html">
-    <i>( Describe task in general )</i>
+<p>
+    A pangram (Greek: παν γράμμα, pan gramma, "every letter") or holoalphabetic sentence for a given alphabet is a
+    sentence using every letter of the alphabet at least once. We will use latyn alpahabet A-Z.
+    Maybe you already know the famous pangram "The quick brown fox jumps over the lazy dog".
 </p>
 
 <p>
-    Sum two passed ints
+    You are given a text with latyn letters and punctuation symbols. Check is it a pangram or not.
+    Case does not matter.
 </p>
 
-<p style="text-align: center;">
-    <img class="for_info_only" title="example" src="{{MEDIA}}example.svg" alt="example" width="392px"/>
-    <img class="for_editor_only" title="example" src="{{MEDIA}}example.svg" alt="example" width="380px"/>
-</p>
 
-<p><i>( Explain input and output values )</i></p>
 <p>
-    <strong>Input: </strong> Two arguments. Both are int
+    <strong>Input: </strong> A text as a string.
 </p>
 
 <p>
-    <strong>Output: </strong> Int. 
+    <strong>Output: </strong> Is it a pangram or not as a boolean.
 </p>
-
 
 
 <div class="for_info_only">
-    <p><i>( Put some usage examples )</i></p>
     <p>
         <strong>Example:</strong>
     </p>
-    <textarea data-code="python">
-checkio(3, 2) == 5
-checkio(5, 7) == 12
-    </textarea>
+    <textarea data-code="python">check_pangram("The quick brown fox jumps over the lazy dog.") == True
+check_pangram("ABCDEF.") == False</textarea>
 </div>
 
 <p class="for_info_only">
     <strong>How it is used: </strong>
-    <i>(Here you can explain how it can be used in development and what is usage of this.)</i>
+    Pangrams have been used to display typefaces, test
+    equipment, and develop skills in handwriting, calligraphy, and keyboarding.
 </p>
 
 <p>
     <strong>Precondition:</strong>
-    <i>Constraints for Input</i>
 </p>
+<textarea data-code="python">all(ch in (string.punctuation + string.ascii_letters + " ") for ch in text)
+0 < len(text)</textarea>
