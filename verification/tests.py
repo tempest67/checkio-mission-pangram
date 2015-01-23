@@ -58,6 +58,10 @@ TESTS = {
             "answer": False,
         },
         {
+            "input": "a",
+            "answer": False,
+        },
+        {
             "input": "IlrCOiJHgmROZaMAXvvBRESnEkAgJKJPPXIUtjaVOxrnYJQQjjjQSiU"
                      "eJNUXdHUqwvHRkzTjYhIhLkubPzMOPKYPIaRLCcSgFHga",
             "answer": True,
