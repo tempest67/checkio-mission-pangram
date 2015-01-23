@@ -40,9 +40,9 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210', 'snap.svg_030'],
             }
 
             //YOUR FUNCTION NAME
-            var fname = 'checkio';
+            var fname = 'check_pangram';
 
-            var checkioInput = data.in;
+            var checkioInput = data.in || "The quick brown fox jumps over the lazy dog.";
             var checkioInputStr = fname + '(' + JSON.stringify(checkioInput) + ')';
 
             var failError = function (dError) {
