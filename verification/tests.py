@@ -34,7 +34,7 @@ TESTS = {
             "answer": True,
         },
         {
-            "input": "As quirky joke, chefs won’t pay devil magic zebra tax.",
+            "input": "As quirky joke, chefs won't pay devil magic zebra tax.",
             "answer": True,
         },
         {
