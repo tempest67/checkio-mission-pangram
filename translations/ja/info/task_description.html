@@ -1,0 +1,50 @@
+<p>
+    パングラム (Greek:παν γράμμα, pan gramma, 「すべての文字」) とはアルファベットのすべての文字が少なくとも一回使われている文です。ひょっとしたらあなたはよく知られているパングラム "The
+    quick brown fox jumps over the lazy dog" をご存知かもしれません。
+</p>
+<!-- <p>
+    A pangram (Greek:παν γράμμα, pan gramma, "every letter") or holoalphabetic sentence for a given alphabet is a
+    sentence using every letter of the alphabet at least once. Perhaps you are familiar with the well known pangram "The
+    quick brown fox jumps over the lazy dog".
+</p> -->
+<p>
+  このミッションでは、私達はラテンアルファベット(A-Z)を使います。
+  あなたはラテン文字と句読点によるテキストが与えられます。
+  あなたはその文がパングラムかそうでないかをチェックする必要があります。大文字小文字は関係ありません。
+</p>
+<!-- <p>
+    For this mission, we will use the latin alphabet (A-Z). You are given a text with latin letters and punctuation
+    symbols. You need to check if the sentence is a pangram or not. Case does not matter.
+
+</p> -->
+
+<p>
+    <strong>入力 </strong> テキストが文字列として与えれられます
+</p>
+
+<p>
+    <strong>出力 </strong> 文章がパングラムかどうかをブール値で返します
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>例</strong>
+    </p>
+    <textarea data-code="python">check_pangram("The quick brown fox jumps over the lazy dog.") == True
+check_pangram("ABCDEF.") == False</textarea>
+</div>
+
+<p class="for_info_only">
+  <strong>どうやって使われるか </strong>
+  パングラムは書体の表示、装置のテスト、手書きや書道やキーボードのタイピング技術を練習するものとして長年使われてきました。
+    <!-- <strong>How it is used: </strong>
+    Pangrams have been used to display typefaces, test equipment, and develop skills in handwriting, calligraphy, and
+    keyboarding for ages. -->
+</p>
+
+<p>
+    <strong>事前条件</strong>
+</p>
+<pre class="brush: python">all(ch in (string.punctuation + string.ascii_letters + " ") for ch in text)
+0 < len(text)</pre>
