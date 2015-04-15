@@ -1,0 +1,44 @@
+<p> 
+Un pangramme (du grec pan : « tous » et gramma : « lettre ») est une phrase comportant toutes les lettres de l'alphabet.
+Avec un peu d'ingéniosité, il est facile d'en créer sur le modèle des phrases réflexives :
+« Jugez que ce texte renferme l'alphabet, dix voyelles, k et w. » (Thérèse Amiel).
+</p> 
+<p> 
+Pour Cette mission, nous utiliserons l'alphabet Latin (A-Z) qui comporte 26 lettres. Vous recevez en paramètre un texte avec 
+des lettres de l'alphabet latin et la ponctuation. Vous devez vérifier si cette phrase est un pangramme. Les majuscules n'ont
+pas d'importance.
+</p> 
+
+
+<p> 
+<strong>Entrée: </strong> Un texte sous forme de chaine de caractères. 
+</p> 
+ 
+ 
+<p> 
+<strong>Résultat: </strong> Si la phrase est un pangramme sous la forme d'une expression booléenne. 
+</p> 
+ 
+ 
+<div class="Pour information seulement"> 
+<p> 
+<strong>Exemple:</strong> 
+</p> 
+<textarea data-code="python">check_pangram("Jugez que ce texte renferme l'alphabet, dix voyelles, k et w.") == True 
+check_pangram("ABCDEF.") == False</textarea> 
+</div> 
+ 
+ 
+<p class="Pour infomation seulement"> 
+<strong>Utilisation: </strong> 
+Les pangrammes ont été utilisés pour visualiser des caractères, tester des équipements, et développer et les compétences
+en écriture, la calligraphie et au clavier. 
+</p> 
+ 
+ 
+<p> 
+<strong>Precondition:</strong> 
+</p> 
+<pre class="brush: python">all(ch in (string.punctuation + string.ascii_letters + " ") for ch in text) 
+0 < len(text)</pre> 
+Enter file contents here
